@@ -6,7 +6,7 @@ const NavBar = (props) => {
     <div>
       <Nav>
         <NavItem>
-          <NavLink href="#">Dashboard</NavLink>
+          <NavLink href="#">HOME</NavLink>
         </NavItem>
       </Nav>
     </div>
