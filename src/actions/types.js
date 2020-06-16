@@ -1,0 +1,1 @@
+export const DEFAULT_REDUCER = 'DEFAULT_REDUCER'
