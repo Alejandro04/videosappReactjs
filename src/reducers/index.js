@@ -1,6 +1,8 @@
 import {  combineReducers } from 'redux'
-import defaultReducer from './defaultReducer'
+import tracksReducer from './tracksReducer'
+import albumsReducer from './albumsReducer'
 
 export default combineReducers({
-    default: defaultReducer,
+    tracks: tracksReducer,
+    album: albumsReducer
 })

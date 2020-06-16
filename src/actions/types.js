@@ -1,1 +1,4 @@
-export const DEFAULT_REDUCER = 'DEFAULT_REDUCER'
+export const GET_TRACKS = 'GET_TRACKS'
+export const LOADING_TRACKS = 'LOADING_TRACKS'
+export const GET_ALBUM = 'GET_ALBUM'
+export const LOADING_ALBUM = 'LOADING_ALBUM'
