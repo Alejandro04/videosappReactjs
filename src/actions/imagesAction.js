@@ -7,7 +7,7 @@ dotenv.config()
 
 export const getImage = albumID => (dispatch) => {
     
-    const API_URL = `http://api.napster.com/v2.2/albums/${albumID}/images?apikey=${process.env.REACT_APP_API_KEY}`
+    const API_URL = `http://api.napster.com/v2.2/albums/${albumID}/images?apikey=NTRhZGRjODktYWY2OS00MDg2LWFjZjEtZGYyMDMyNjU3MTE3`
     dispatch(loadingImage())
 
     axios
