@@ -1,38 +1,34 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.tracksContainer{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.tracksCards{
+  flex: 2;
+  display: flex;
+  flex-wrap: wrap;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.tracksList{
+  flex: 1;
+  background-color: #eee;
+}
+.trackCard{
+  width: 33.33%;
+  padding: 10px;
+}
+.searchInput{
+  text-align: center;
+  font-size: 1.5em !important;
+}
+@media (max-width: 768px) {
+  .trackCard{
+    width: 50%;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media (max-width: 490px) {
+  .trackCard{
+    width: 100%;
+  }
+  .tracksList{
+    display: none;
   }
 }
