@@ -18,7 +18,7 @@ class Track extends Component {
     return (
       <div className="trackCard">
         <Card>
-          <CardImg top width="100%" src="http://localhost:3000/image.jpg" alt="Card image cap" />
+          <CardImg top width="100%" src={`http://api.napster.com//imageserver/v2/albums/${this.props.albumID}/images/170x170.jpg`} alt="imageAlbum" />
           <CardBody>
             <CardTitle> {this.props.title} </CardTitle>
             <Link
