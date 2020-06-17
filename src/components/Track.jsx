@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {
-  Card, CardImg, CardText, CardBody,
-  CardTitle, CardSubtitle, Button
+  Card, CardImg, CardBody,
+  CardTitle, Button
 } from 'reactstrap';
 import { Link } from 'react-router-dom'
 import slug from 'slug'
