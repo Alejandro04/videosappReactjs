@@ -1,11 +1,11 @@
 import axios from 'axios'
 import { GET_TRACKS, LOADING_TRACKS } from './types'
-import { returnErrors } from './errorsAction'
+//import { returnErrors } from './errorsAction'
 import dotenv from 'dotenv'
 dotenv.config()
 
 //const API_URL = process.env.LOCAL_TRACKS_URL
-const API_URL = `http://api.napster.com/v2.2/tracks/top?apikey=${process.env.REACT_APP_API_KEY}&limit=5`
+const API_URL = `http://api.napster.com/v2.2/tracks/top?apikey=${process.env.REACT_APP_API_KEY}&limit=6`
 
 export const getTracks = () => (dispatch) => {
     dispatch(loadingTracks())

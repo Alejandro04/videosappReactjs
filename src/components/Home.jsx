@@ -12,18 +12,16 @@ class Home extends Component {
   }
 
   render() {
+    const { tracks } = this.props.tracks
     return (
       <div>
         <h2>Home</h2>
         <SearchTrack />
         <div className="tracksContainer">
           <div className="tracksCards">
-            <Track />
-            <Track />
-            <Track />
-            <Track />
-            <Track />
-            <Track />
+            {tracks && tracks.map(({ id, type, name }) => (
+              <Track key={id} title={name} />
+            ))}
           </div>
           <div className="tracksList">
             Tracks List

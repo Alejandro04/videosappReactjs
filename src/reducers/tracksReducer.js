@@ -10,7 +10,7 @@ export default function (state = initialState, action) {
         case GET_TRACKS:
             return {
                 ...state,
-                clients: action.payload,
+                tracks: action.payload.tracks,
                 loading: false
             }
         case LOADING_TRACKS:

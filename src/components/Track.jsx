@@ -5,12 +5,13 @@ import {
 } from 'reactstrap';
 
 const Track = (props) => {
+  console.log(props)
   return (
     <div className="trackCard">
       <Card>
         <CardImg top width="100%" src="image.jpg" alt="Card image cap" />
         <CardBody>
-          <CardTitle>Traveler</CardTitle>
+          <CardTitle> {props.title} </CardTitle>
           <Button>Hear</Button>
         </CardBody>
       </Card>
