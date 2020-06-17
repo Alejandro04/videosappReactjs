@@ -7,6 +7,7 @@ import Home from "./components/Home"
 import { Container } from 'reactstrap'
 import { Provider } from 'react-redux'
 import store from './store'
+import TrackDetail from './components/TrackDetail'
 
 class App extends Component {
 
@@ -19,6 +20,7 @@ class App extends Component {
             <Container>
               <Switch>
                 <Route exact path='/' component={Home} />
+                <Route exact path='/detail' component={TrackDetail} />
               </Switch>
             </Container>
           </div>
