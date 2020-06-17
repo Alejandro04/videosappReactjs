@@ -9,7 +9,6 @@ import { connect } from 'react-redux'
 class TrackDetail extends Component {
 
     componentDidMount() {
-
         if (this.props.location.data) {
             this.props.getImage(this.props.location.data.albumID)
         } else {
@@ -20,16 +19,16 @@ class TrackDetail extends Component {
     render() {
 
         let title = ""
-        if(this.props.location.data == undefined){
+        if (this.props.location.data == undefined) {
             this.props.history.push(`/`)
-        }else{
+        } else {
             title = this.props.location.data.title
         }
 
         return (
             <div className="trackCard">
                 <Card>
-                    <CardImg top width="100%" src="" alt="Card image cap" />
+                    <CardImg top width="100%" src={this.props.image.image} alt="Card image cap" />
                     <CardBody>
                         <CardTitle> {title} </CardTitle>
                         <Button>Hear</Button>
@@ -37,7 +36,6 @@ class TrackDetail extends Component {
                 </Card>
             </div>
         );
-
     }
 }
 

@@ -1,7 +1,7 @@
 import { GET_IMAGE, LOADING_IMAGE } from '../actions/types'
 
 const initialState = {
-    image: "",
+    image: null,
     loading: false,
 }
 

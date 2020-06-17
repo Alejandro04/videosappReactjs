@@ -15,7 +15,7 @@ export const getImage = albumID => (dispatch) => {
         .then(res => {
             dispatch({
                 type: GET_IMAGE,
-                payload: res.data
+                payload: res.data.images[0].url
             })
         })
         .catch(err => console.log(err)/*returnErrors(err.response.data, err.response.status)*/)
