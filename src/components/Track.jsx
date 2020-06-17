@@ -24,7 +24,7 @@ class Track extends Component {
             <Link
               to={{
                 pathname: "/tracks/play/" + `${slugTitle}`,
-                data: this.props // your data array of objects
+                data: this.props
               }}
             >
               <Button>Hear</Button>
