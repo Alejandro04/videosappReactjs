@@ -19,8 +19,8 @@ class Home extends Component {
         <SearchTrack />
         <div className="tracksContainer">
           <div className="tracksCards">
-            {tracks && tracks.map(({ id, type, name }) => (
-              <Track key={id} title={name} />
+            {tracks && tracks.map(({ id, type, name, albumId}) => (
+              <Track key={id} title={name} albumID={albumId} />
             ))}
           </div>
           <div className="tracksList">
