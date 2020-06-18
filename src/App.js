@@ -8,6 +8,7 @@ import { Container } from 'reactstrap'
 import { Provider } from 'react-redux'
 import store from './store'
 import TrackDetail from './components/TrackDetail'
+import PageNotFound from './components/PageNotFound'
 
 class App extends Component {
 
@@ -21,6 +22,7 @@ class App extends Component {
               <Switch>
                 <Route exact path='/' component={Home} />
                 <Route exact path='/play/:slug' component={TrackDetail} />
+                <Route component={PageNotFound} />
               </Switch>
             </Container>
           </div>
