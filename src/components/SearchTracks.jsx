@@ -3,6 +3,7 @@ import { Form, FormGroup, Input } from 'reactstrap';
 import { Typeahead } from 'react-bootstrap-typeahead';
 import { connect } from 'react-redux'
 import { filterTrack } from '../actions/filterTracksAction'
+import { getTracks } from '../actions/tracksAction'
 
 
 class SearchTrack extends Component {
@@ -23,6 +24,8 @@ class SearchTrack extends Component {
   handleChange = () => {
     if (typeof this.state.selected !== 'undefined' && this.state.selected.length > 0) {
       this.props.filterTrack(this.state.selected)
+    }else{
+      this.props.getTracks()
     }
   }
 
@@ -49,4 +52,4 @@ const mapStateToProps = (state) => ({
   tracks: state.tracks
 })
 
-export default connect(mapStateToProps, { filterTrack })(SearchTrack)
+export default connect(mapStateToProps, { filterTrack, getTracks })(SearchTrack)
