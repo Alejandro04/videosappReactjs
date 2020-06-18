@@ -7,7 +7,7 @@ dotenv.config()
 //const API_URL = process.env.REACT_APP_LOCAL_TRACKS_URL
 
 export const filterTrack = track => (dispatch) => {
-    const API_URL = `http://api.napster.com/v2.2/tracks/${track[0].id}?apikey=YTkxZTRhNzAtODdlNy00ZjMzLTg0MWItOTc0NmZmNjU4Yzk4`
+    const API_URL = `https://api.napster.com/v2.2/tracks/${track[0].id}?apikey=YTkxZTRhNzAtODdlNy00ZjMzLTg0MWItOTc0NmZmNjU4Yzk4`
     dispatch(loadingTracks())
 
     axios
