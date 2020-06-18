@@ -12,7 +12,7 @@ class SearchTrack extends Component {
     tracks: []
   }
 
-  componentWillMount(){
+  componentWillMount() {
     let tracks = JSON.parse(localStorage.getItem("tracks"))
 
     this.setState({
@@ -21,8 +21,9 @@ class SearchTrack extends Component {
   }
 
   handleChange = () => {
-    console.log(this.state.selected)
-    //this.props.filterTrack(this.state.selected)
+    if (typeof this.state.selected !== 'undefined' && this.state.selected.length > 0) {
+      this.props.filterTrack(this.state.selected)
+    }
   }
 
   render() {
