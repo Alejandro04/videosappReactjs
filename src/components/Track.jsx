@@ -29,7 +29,7 @@ class Track extends Component {
             />
             <Link
               to={{
-                pathname: "/tracks/play/" + `${slugTitle}`,
+                pathname: "/play/" + `${slugTitle}`,
                 data: this.props
               }}
             >
