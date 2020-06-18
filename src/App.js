@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import 'react-bootstrap-typeahead/css/Typeahead.css';
 import NavBar from './components/NavBar'
 import Home from "./components/Home"
 import { Container } from 'reactstrap'

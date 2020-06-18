@@ -15,7 +15,7 @@ class Home extends Component {
     const { tracks } = this.props.tracks
     return (
       <div>
-        <h2>Home</h2>
+        <h2 className="title">Home</h2>
         <SearchTrack />
         <div className="tracksContainer">
           <div className="tracksCards">

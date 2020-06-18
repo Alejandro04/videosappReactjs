@@ -10,6 +10,8 @@
     "bootstrap": "^4.5.0",
     "react": "^16.13.1",
     "react-audio-player": "^0.13.0",
+    "react-bootstrap": "^1.0.1",
+    "react-bootstrap-typeahead": "^5.0.0-rc.3",
     "react-dom": "^16.13.1",
     "react-redux": "^7.2.0",
     "react-router": "^5.2.0",
