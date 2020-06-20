@@ -23,6 +23,11 @@
 .title{
   text-align: center;
 }
+.loading{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
 @media (max-width: 768px) {
   .trackCard{
     width: 50%;

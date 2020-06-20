@@ -5,6 +5,7 @@ import {
 import { getImage } from '../actions/imagesAction'
 import { connect } from 'react-redux'
 import ReactAudioPlayer from 'react-audio-player';
+import Loader from 'react-loader-spinner'
 
 class TrackDetail extends Component {
 
@@ -28,20 +29,36 @@ class TrackDetail extends Component {
             mp3Url = this.props.location.data.mp3Url
         }
 
-        return (
-            <div className="trackCard">
-                <Card>
-                    <CardImg top width="100%" src={this.props.image.image} alt="Card image cap" />
-                    <CardBody>
-                        <CardTitle> {title} </CardTitle>
-                        <ReactAudioPlayer className="player"
-                            src={mp3Url}
-                            controls
-                        />
-                    </CardBody>
-                </Card>
-            </div>
-        );
+        const { loading } = this.props.image
+
+        if (loading) {
+            return (
+                <div className="loading">
+                    <Loader
+                        type="Puff"
+                        color="#00BFFF"
+                        height={100}
+                        width={100}
+                        timeout={3000} //3 secs
+                    />
+                </div>
+            )
+        } else {
+            return (
+                <div className="trackCard">
+                    <Card>
+                        <CardImg top width="100%" src={this.props.image.image} alt="Card image cap" />
+                        <CardBody>
+                            <CardTitle> {title} </CardTitle>
+                            <ReactAudioPlayer className="player"
+                                src={mp3Url}
+                                controls
+                            />
+                        </CardBody>
+                    </Card>
+                </div>
+            );
+        }
     }
 }
 
